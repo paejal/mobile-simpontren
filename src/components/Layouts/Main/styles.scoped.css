@@ -1,0 +1,14 @@
+.root {
+  padding: 0;
+}
+
+.main {
+  background-color: var(--primary-color);
+  padding: 4.375rem 0 0;
+}
+
+@media only screen and (max-width: 48em) {
+  .root {
+    padding: 0;
+  }
+}

@@ -1,0 +1,53 @@
+.root > div {
+  background-color: #EAECF7;
+  border-radius: 2rem;
+  color: #A5A5A6;
+  left: 70%;
+  margin: auto;
+  padding: 3rem 1.875rem;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-20%) translateY(-50%);
+}
+
+.root > div > form {
+  margin-top: 1.625rem;
+}
+
+.root > div > form > label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.root > div > form > label > input {
+  display: block;
+  border: none;
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+  padding: 0.875rem 1rem;
+  width: 100%;
+}
+
+.root > div > form > button {
+  background-color: #5863B4;
+  border: none;
+  border-radius: 1rem;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 48em) {
+  .root {
+    padding: 1rem;
+  }
+
+  .root > div {
+    left: 0%;
+    top: 50%;
+    transform: translateX(0%) translateY(-50%);
+    margin: 0 2rem;
+  }
+}

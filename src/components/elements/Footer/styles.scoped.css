@@ -1,0 +1,16 @@
+.root {
+  align-items: center;
+  background-color: black;
+  color: #929292;
+  display: flex;
+  height: 10rem;
+  justify-content: space-between;
+  padding: 0 7.5rem;
+}
+
+.root > img { height: 1.5rem; }
+.root > p {
+  font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+}

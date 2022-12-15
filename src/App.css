@@ -1,0 +1,73 @@
+* {
+  animation: fade-in 0.5s ease-in-out;
+  box-sizing: border-box;
+  color: inherit;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+#app {
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  width: 100vw;
+}
+
+#app.home {
+  display: flex;
+  flex-direction: column;
+}
+
+#app.home > main > *:nth-child(1) { animation: fade-in 1s ease-in-out 0.25s; animation-fill-mode: forwards; opacity: 0; }
+#app.home > main > *:nth-child(2) { animation: fade-in 1s ease-in-out 0.75s; animation-fill-mode: forwards; opacity: 0; }
+#app.home > main > *:nth-child(3) { animation: fade-in 1s ease-in-out 1.25s; animation-fill-mode: forwards; opacity: 0; }
+#app.home > main > *:nth-child(4) { animation: fade-in 1s ease-in-out 1.75s; animation-fill-mode: forwards; opacity: 0; }
+#app.home > main > *:nth-child(5) { animation: fade-in 1s ease-in-out 2.25s; animation-fill-mode: forwards; opacity: 0; }
+
+:root {
+  --primary-color: #1E232B;
+  --white: #ffffff;
+  --text: #E5E5E5;
+  --grey: #767676;
+  --red: #E74C3C;
+  --button-red: #FF0000;
+
+  --text-color: #A6A6A6;
+  --slate-grey: #66686a;
+  font-size: calc(100vw * 16 / 1440);
+}
+
+@media only screen and (max-width: 90em) {
+  :root {
+    font-size: calc(100vw * 16 / 1440);
+  }  
+}
+
+@media only screen and (max-width: 48em) {
+  * {
+    line-height: 1.2;
+  }
+
+  :root {
+    font-size: calc(100vw * 16 / 360);
+  }
+}

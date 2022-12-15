@@ -1,0 +1,44 @@
+.root { position: relative; margin: 1.25rem 1.125rem; }
+.root >  button {
+  align-items: center;
+  background: rgba(224, 224, 224, 0.13);
+  border-radius: 0.25rem;
+  border: none;
+  color: #E5E5E5;
+  column-gap: 1rem;
+  cursor: pointer;
+  display: flex;
+  font-size: 0.875rem;
+  font-weight: 400;
+  justify-content: space-between;
+  text-transform: capitalize;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.root > button > p { text-align: left; }
+.root > ul > li[disabled],
+.root > button[disabled] {
+  background: #F2F2F2;
+  pointer-events: none;
+}
+
+.root > ul {
+  background: #111419;
+  border-radius: 0.25rem;
+  color: #ffffff;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+}
+.root > ul > li {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  list-style: none;
+  padding: 0.25rem 0.75rem;
+}
+.root > ul > li:hover {
+  background: #2F363F;
+  cursor: pointer;
+}
